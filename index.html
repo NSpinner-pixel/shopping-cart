@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dynamic Shopping Cart</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Dynamic Shopping Cart</h1>
+  
+  <section id="add-product-section">
+    <input type="text" id="item-name" placeholder="Enter product name" />
+    <input type="number" id="item-price" placeholder="Enter price" min="0" step="0.01" />
+    <input type="number" id="item-quantity" placeholder="Quantity" min="1" value="1" />
+    <button id="add-to-cart">Add to Cart</button>
+  </section>
+
+  <ul id="shopping-cart"></ul>
+
+  <h3>
+    Total Price: $<span id="cart-total">0.00</span>
+  </h3>
+
+  <script src="script.js"></script>
+</body>
+</html>
